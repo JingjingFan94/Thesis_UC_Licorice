@@ -1,0 +1,282 @@
+---
+title: "Figure 1 Identification of active compounds through in vivo and in vitro model screening."
+author: "Jingjing Fan"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: false
+---
+
+# Figure 1: data and code
+
+This document loads **all numeric source data supplied for this figure** and produces descriptive plotting previews. The CSV files are preserved exactly as provided. These graphics are **not a pixel-perfect reconstruction** of the manuscript PDF: layouts, statistical significance annotations, Western blots, microscopy images, schematics, and other image-based panels require separate source materials.
+
+**Statistical caution:** No between-group tests, multiplicity corrections, significance stars, binding-affinity fits, or other undocumented inferential procedures are invented here. The plots show observed values or descriptive mean ± SD/SEM as labelled.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = FALSE,
+                       fig.width = 9, fig.height = 5.5, dpi = 150)
+source("../script/source_data_helpers.R", encoding = "UTF-8")
+```
+
+This figure has **24 CSV source-data files**. The original figure PDF is `Figure 1.pdf` when included in the full archive.
+
+## Panel E
+
+### Fig1E / Caco2 / IL1b
+
+Source file: `Fig1E_Caco2_IL1b.csv`.
+
+```{r Fig1E-Caco2-IL1b, fig.cap="Fig1E_Caco2_IL1b: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_Caco2_IL1b.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_Caco2_IL1b.csv"))
+```
+
+### Fig1E / Caco2 / IL1b / WB
+
+Source file: `Fig1E_Caco2_IL1b_WB.csv`.
+
+```{r Fig1E-Caco2-IL1b-WB, fig.cap="Fig1E_Caco2_IL1b_WB: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_Caco2_IL1b_WB.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_Caco2_IL1b_WB.csv"))
+```
+
+### Fig1E / Caco2 / IL6
+
+Source file: `Fig1E_Caco2_IL6.csv`.
+
+```{r Fig1E-Caco2-IL6, fig.cap="Fig1E_Caco2_IL6: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_Caco2_IL6.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_Caco2_IL6.csv"))
+```
+
+### Fig1E / Caco2 / IL6 / WB
+
+Source file: `Fig1E_Caco2_IL6_WB.csv`.
+
+```{r Fig1E-Caco2-IL6-WB, fig.cap="Fig1E_Caco2_IL6_WB: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_Caco2_IL6_WB.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_Caco2_IL6_WB.csv"))
+```
+
+### Fig1E / Caco2 / Occludin / WB
+
+Source file: `Fig1E_Caco2_Occludin_WB.csv`.
+
+```{r Fig1E-Caco2-Occludin-WB, fig.cap="Fig1E_Caco2_Occludin_WB: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_Caco2_Occludin_WB.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_Caco2_Occludin_WB.csv"))
+```
+
+### Fig1E / Caco2 / ZO1 / WB
+
+Source file: `Fig1E_Caco2_ZO1_WB.csv`.
+
+```{r Fig1E-Caco2-ZO1-WB, fig.cap="Fig1E_Caco2_ZO1_WB: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_Caco2_ZO1_WB.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_Caco2_ZO1_WB.csv"))
+```
+
+### Fig1E / Caco2 / TJP1
+
+Source file: `Fig1E_Caco2_TJP1.csv`.
+
+```{r Fig1E-Caco2-TJP1, fig.cap="Fig1E_Caco2_TJP1: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_Caco2_zo1.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_Caco2_TJP1.csv"))
+```
+
+### Fig1E / RAW / IL1b / WB
+
+Source file: `Fig1E_RAW_IL1b_WB.csv`.
+
+```{r Fig1E-RAW-IL1b-WB, fig.cap="Fig1E_RAW_IL1b_WB: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_RAW_IL1b_WB.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_RAW_IL1b_WB.csv"))
+```
+
+### Fig1E / RAW / IL6 / WB
+
+Source file: `Fig1E_RAW_IL6_WB.csv`.
+
+```{r Fig1E-RAW-IL6-WB, fig.cap="Fig1E_RAW_IL6_WB: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_RAW_IL6_WB.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_RAW_IL6_WB.csv"))
+```
+
+### Fig1E / RAW / Il1b
+
+Source file: `Fig1E_RAW_Il1b.csv`.
+
+```{r Fig1E-RAW-Il1b, fig.cap="Fig1E_RAW_Il1b: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_RAW_Il1b.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_RAW_Il1b.csv"))
+```
+
+### Fig1E / RAW / Il6
+
+Source file: `Fig1E_RAW_Il6.csv`.
+
+```{r Fig1E-RAW-Il6, fig.cap="Fig1E_RAW_Il6: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_RAW_Il6.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_RAW_Il6.csv"))
+```
+
+### Fig1E / RAW / NO
+
+Source file: `Fig1E_RAW_NO.csv`.
+
+```{r Fig1E-RAW-NO, fig.cap="Fig1E_RAW_NO: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_RAW_NO.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_RAW_NO.csv"))
+```
+
+### Fig1E / RAW / cck8
+
+Source file: `Fig1E_RAW_cck8.csv`.
+
+```{r Fig1E-RAW-cck8, fig.cap="Fig1E_RAW_cck8: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_RAW_cck8.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_RAW_cck8.csv"))
+```
+
+### Fig1E / Caco2 / cck8
+
+Source file: `Fig1E_Caco2_cck8.csv`.
+
+```{r Fig1E-Caco2_cck8, fig.cap="Fig1E_Caco2_cck8: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_Caco2_cck8.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_Caco2_cck8.csv"))
+```
+
+### Fig1E / organoids / Ocln
+
+Source file: `Fig1E_organoids_Ocln.csv`.
+
+```{r Fig1E-organoids-Ocln, fig.cap="Fig1E_organoids_Ocln: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_organoids_Ocln.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_organoids_Ocln.csv"))
+```
+
+### Fig1E / organoids / Tjp1
+
+Source file: `Fig1E_organoids_Tjp1.csv`.
+
+```{r Fig1E-organoids-Tjp1, fig.cap="Fig1E_organoids_Tjp1: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1E_organoids_Tjp1.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1E_organoids_Tjp1.csv"))
+```
+
+## Panel G
+
+### Fig1G / Mouse / weight
+
+Source file: `Fig1G_Mouse_weight.csv`.
+
+```{r Fig1G-Mouse-weight, fig.cap="Fig1G_Mouse_weight: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1G_Mouse_weight.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1G_Mouse_weight.csv"))
+```
+
+## Panel I
+
+### Fig1I / Mouse / DAI
+
+Source file: `Fig1I_Mouse_DAI.csv`.
+
+```{r Fig1I-Mouse-DAI, fig.cap="Fig1I_Mouse_DAI: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1I_Mouse_DAI.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1I_Mouse_DAI.csv"))
+```
+
+## Panel J
+
+### Fig1J / Mouse / Colon / length
+
+Source file: `Fig1J_Mouse_Colon_length.csv`.
+
+```{r Fig1J-Mouse-Colon-length, fig.cap="Fig1J_Mouse_Colon_length: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1J_Mouse_Colon_length.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1J_Mouse_Colon_length.csv"))
+```
+
+## Panel K
+
+### Fig1K / Mouse / Spleen / index
+
+Source file: `Fig1K_Mouse_Spleen_index.csv`.
+
+```{r Fig1K-Mouse-Spleen-index, fig.cap="Fig1K_Mouse_Spleen_index: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1K_Mouse_Spleen_index.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1K_Mouse_Spleen_index.csv"))
+```
+
+## Panel L
+
+### Fig1L / Mouse / Tjp1
+
+Source file: `Fig1L_Mouse_Tjp1.csv`.
+
+```{r Fig1L-Mouse-Tjp1, fig.cap="Fig1L_Mouse_Tjp1: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1L_Mouse_Tjp1.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1L_Mouse_Tjp1.csv"))
+```
+
+## Panel M
+
+### Fig1M / Mouse / Ocln
+
+Source file: `Fig1M_Mouse_Ocln.csv`.
+
+```{r Fig1M-Mouse-Ocln, fig.cap="Fig1M_Mouse_Ocln: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1M_Mouse_Ocln.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1M_Mouse_Ocln.csv"))
+```
+
+## Panel N
+
+### Fig1N / Mouse / Tnf
+
+Source file: `Fig1N_Mouse_Tnf.csv`.
+
+```{r Fig1N-Mouse-Tnf, fig.cap="Fig1N_Mouse_Tnf: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1N_Mouse_Tnf.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1N_Mouse_Tnf.csv"))
+```
+
+## Panel O
+
+### Fig1O / Mouse / Il6
+
+Source file: `Fig1O_Mouse_Il6.csv`.
+
+```{r Fig1O-Mouse-Il6, fig.cap="Fig1O_Mouse_Il6: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig1O_Mouse_Il6.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig1O_Mouse_Il6.csv"))
+```
+

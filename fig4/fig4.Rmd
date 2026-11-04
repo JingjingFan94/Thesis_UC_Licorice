@@ -1,0 +1,120 @@
+---
+title: "Figure 4. LA enhances IQGAP2-p65 interaction."
+author: "Jingjing Fan"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: false
+---
+
+# Figure 4: data and code
+
+This document loads **all numeric source data supplied for this figure** and produces descriptive plotting previews. The CSV files are preserved exactly as provided. These graphics are **not a pixel-perfect reconstruction** of the manuscript PDF: layouts, statistical significance annotations, Western blots, microscopy images, schematics, and other image-based panels require separate source materials.
+
+**Statistical caution:** No between-group tests, multiplicity corrections, significance stars, binding-affinity fits, or other undocumented inferential procedures are invented here. The plots show observed values or descriptive mean ± SD/SEM as labelled.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = FALSE,
+                       fig.width = 9, fig.height = 5.5, dpi = 150)
+source("../script/source_data_helpers.R", encoding = "UTF-8")
+```
+
+This figure has **9 CSV source-data files**. The original figure PDF is `Figure 4.pdf` when included in the full archive.
+
+## Panel A
+
+### Fig4A / IQGAP2
+
+Source file: `Fig4A_IQGAP2.csv`.
+
+```{r Fig4A-IQGAP2, fig.cap="Fig4A_IQGAP2: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4A_IQGAP2.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4A_IQGAP2.csv"))
+```
+
+### Fig4A / IQGAP2 / IL1B
+
+Source file: `Fig4A_IQGAP2_IL1B.csv`.
+
+```{r Fig4A-IQGAP2-IL1B, fig.cap="Fig4A_IQGAP2_IL1B: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4A_IQGAP2_IL1B.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4A_IQGAP2_IL1B.csv"))
+```
+
+### Fig4A / IQGAP2 / IL6
+
+Source file: `Fig4A_IQGAP2_IL6.csv`.
+
+```{r Fig4A-IQGAP2-IL6, fig.cap="Fig4A_IQGAP2_IL6: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4A_IQGAP2_IL6.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4A_IQGAP2_IL6.csv"))
+```
+
+### Fig4A / IQGAP2 / OCLN
+
+Source file: `Fig4A_IQGAP2_OCLN.csv`.
+
+```{r Fig4A-IQGAP2-OCLN, fig.cap="Fig4A_IQGAP2_OCLN: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4A_IQGAP2_OCLN.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4A_IQGAP2_OCLN.csv"))
+```
+
+### Fig4A / IQGAP2 / TJP1
+
+Source file: `Fig4A_IQGAP2_TJP1.csv`.
+
+```{r Fig4A-IQGAP2-TJP1, fig.cap="Fig4A_IQGAP2_TJP1: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4A_IQGAP2_TJP1.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4A_IQGAP2_TJP1.csv"))
+```
+
+## Panel C
+
+### Fig4C / Caco2 / p65
+
+Source file: `Fig4C_Caco2_p65.csv`.
+
+```{r Fig4C-Caco2-p65, fig.cap="Fig4C_Caco2_p65: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4C_Caco2_p65.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4C_Caco2_p65.csv"))
+```
+
+### Fig4C / Colon / p65
+
+Source file: `Fig4C_Colon_p65.csv`.
+
+```{r Fig4C-Colon-p65, fig.cap="Fig4C_Colon_p65: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4C_Colon_p65.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4C_Colon_p65.csv"))
+```
+
+## Panel F
+
+### Fig4F / IQGAP2 / p65
+
+Source file: `Fig4F_IQGAP2_p65.csv`.
+
+```{r Fig4F-IQGAP2-p65, fig.cap="Fig4F_IQGAP2_p65: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4F_IQGAP2_p65.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4F_IQGAP2_p65.csv"))
+```
+
+### Fig4F / p65 / DAPI
+
+Source file: `Fig4F_p65_DAPI.csv`.
+
+```{r Fig4F-p65-DAPI, fig.cap="Fig4F_p65_DAPI: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig4F_p65_DAPI.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig4F_p65_DAPI.csv"))
+```
+

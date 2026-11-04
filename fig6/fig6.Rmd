@@ -1,0 +1,164 @@
+---
+title: "Figure 6 IQGAP2 and MYD88 knockdown modulates LA-mediated protection against colitis."
+author: "Jingjing Fan"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: false
+---
+
+# Figure 6: data and code
+
+This document loads **all numeric source data supplied for this figure** and produces descriptive plotting previews. The CSV files are preserved exactly as provided. These graphics are **not a pixel-perfect reconstruction** of the manuscript PDF: layouts, statistical significance annotations, Western blots, microscopy images, schematics, and other image-based panels require separate source materials.
+
+**Statistical caution:** No between-group tests, multiplicity corrections, significance stars, binding-affinity fits, or other undocumented inferential procedures are invented here. The plots show observed values or descriptive mean ± SD/SEM as labelled.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = FALSE,
+                       fig.width = 9, fig.height = 5.5, dpi = 150)
+source("../script/source_data_helpers.R", encoding = "UTF-8")
+```
+
+This figure has **13 CSV source-data files**. The original figure PDF is `Figure 6.pdf` when included in the full archive.
+
+## Panel C
+
+### Fig6C / Weight / IQGAP2
+
+Source file: `Fig6C_Weight_IQGAP2.csv`.
+
+```{r Fig6C-Weight-IQGAP2, fig.cap="Fig6C_Weight_IQGAP2: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6C_Weight_IQGAP2.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6C_Weight_IQGAP2.csv"))
+```
+
+### Fig6C / Weight / MYD88
+
+Source file: `Fig6C_Weight_MYD88.csv`.
+
+```{r Fig6C-Weight-MYD88, fig.cap="Fig6C_Weight_MYD88: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6C_Weight_MYD88.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6C_Weight_MYD88.csv"))
+```
+
+### Fig6C / Weight / NC
+
+Source file: `Fig6C_Weight_NC.csv`.
+
+```{r Fig6C-Weight-NC, fig.cap="Fig6C_Weight_NC: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6C_Weight_NC.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6C_Weight_NC.csv"))
+```
+
+## Panel D
+
+### Fig6D / Colon / length
+
+Source file: `Fig6D_Colon_length.csv`.
+
+```{r Fig6D-Colon-length, fig.cap="Fig6D_Colon_length: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6D_Colon_length.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6D_Colon_length.csv"))
+```
+
+## Panel E
+
+### Fig6E / Spleen / index
+
+Source file: `Fig6E_Spleen_index.csv`.
+
+```{r Fig6E-Spleen-index, fig.cap="Fig6E_Spleen_index: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6E_Spleen_index.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6E_Spleen_index.csv"))
+```
+
+## Panel F
+
+### Fig6F / DAI / IQGAP2
+
+Source file: `Fig6F_DAI_IQGAP2.csv`.
+
+```{r Fig6F-DAI-IQGAP2, fig.cap="Fig6F_DAI_IQGAP2: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6F_DAI_IQGAP2.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6F_DAI_IQGAP2.csv"))
+```
+
+### Fig6F / DAI / MYD88
+
+Source file: `Fig6F_DAI_MYD88.csv`.
+
+```{r Fig6F-DAI-MYD88, fig.cap="Fig6F_DAI_MYD88: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6F_DAI_MYD88.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6F_DAI_MYD88.csv"))
+```
+
+### Fig6F / DAI / NC
+
+Source file: `Fig6F_DAI_NC.csv`.
+
+```{r Fig6F-DAI-NC, fig.cap="Fig6F_DAI_NC: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6F_DAI_NC.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6F_DAI_NC.csv"))
+```
+
+## Panel H
+
+### Fig6H / Cd86
+
+Source file: `Fig6H_Cd86.csv`.
+
+```{r Fig6H-Cd86, fig.cap="Fig6H_Cd86: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6H_Cd86.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6H_Cd86.csv"))
+```
+
+### Fig6H / Il6
+
+Source file: `Fig6H_Il6.csv`.
+
+```{r Fig6H-Il6, fig.cap="Fig6H_Il6: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6H_Il6.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6H_Il6.csv"))
+```
+
+### Fig6H / Ocln
+
+Source file: `Fig6H_Ocln.csv`.
+
+```{r Fig6H-Ocln, fig.cap="Fig6H_Ocln: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6H_Ocln.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6H_Ocln.csv"))
+```
+
+### Fig6H / Tjp1
+
+Source file: `Fig6H_Tjp1.csv`.
+
+```{r Fig6H-Tjp1, fig.cap="Fig6H_Tjp1: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6H_Tjp1.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6H_Tjp1.csv"))
+```
+
+### Fig6H / Tnf
+
+Source file: `Fig6H_Tnf.csv`.
+
+```{r Fig6H-Tnf, fig.cap="Fig6H_Tnf: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig6H_Tnf.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig6H_Tnf.csv"))
+```
+

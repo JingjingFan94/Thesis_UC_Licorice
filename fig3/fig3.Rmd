@@ -1,0 +1,110 @@
+---
+title: "Figure 3 LA Target fishing and validation."
+author: "Jingjing Fan"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: false
+---
+
+# Figure 3: data and code
+
+This document loads **all numeric source data supplied for this figure** and produces descriptive plotting previews. The CSV files are preserved exactly as provided. These graphics are **not a pixel-perfect reconstruction** of the manuscript PDF: layouts, statistical significance annotations, Western blots, microscopy images, schematics, and other image-based panels require separate source materials.
+
+**Statistical caution:** No between-group tests, multiplicity corrections, significance stars, binding-affinity fits, or other undocumented inferential procedures are invented here. The plots show observed values or descriptive mean ± SD/SEM as labelled.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = FALSE,
+                       fig.width = 9, fig.height = 5.5, dpi = 150)
+source("../script/source_data_helpers.R", encoding = "UTF-8")
+```
+
+This figure has **8 CSV source-data files**. The original figure PDF is `Figure 3.pdf` when included in the full archive.
+
+## Panel C
+
+### Fig3C / Caco2 / IQGAP2
+
+Source file: `Fig3C_Caco2_IQGAP2.csv`.
+
+```{r Fig3C-Caco2-IQGAP2, fig.cap="Fig3C_Caco2_IQGAP2: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig3C_Caco2_IQGAP2.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig3C_Caco2_IQGAP2.csv"))
+```
+
+### Fig3C / Caco2 / MYD88
+
+Source file: `Fig3C_Caco2_MYD88.csv`.
+
+```{r Fig3C-Caco2-MYD88, fig.cap="Fig3C_Caco2_MYD88: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig3C_Caco2_MYD88.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig3C_Caco2_MYD88.csv"))
+```
+
+### Fig3C / Colon / IQGAP2
+
+Source file: `Fig3C_Colon_IQGAP2.csv`.
+
+```{r Fig3C-Colon-IQGAP2, fig.cap="Fig3C_Colon_IQGAP2: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig3C_Colon_IQGAP2.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig3C_Colon_IQGAP2.csv"))
+```
+
+### Fig3C / Colon / MYD88
+
+Source file: `Fig3C_Colon_MYD88.csv`.
+
+```{r Fig3C-Colon-MYD88, fig.cap="Fig3C_Colon_MYD88: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig3C_Colon_MYD88.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig3C_Colon_MYD88.csv"))
+```
+
+## Panel D
+
+### Fig3D / DARTS / Caco2
+
+Source file: `Fig3D_DARTS_Caco2.csv`.
+
+```{r Fig3D-DARTS-Caco2, fig.cap="Fig3D_DARTS_Caco2: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig3D_DARTS_Caco2.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig3D_DARTS_Caco2.csv"))
+```
+
+### Fig3D / DARTS / Colon
+
+Source file: `Fig3D_DARTS_Colon.csv`.
+
+```{r Fig3D-DARTS-Colon, fig.cap="Fig3D_DARTS_Colon: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig3D_DARTS_Colon.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig3D_DARTS_Colon.csv"))
+```
+
+## Panel E
+
+### Fig3E / MST / IQGAP2
+
+Source file: `Fig3E_MST_IQGAP2.csv`.
+
+```{r Fig3E-MST-IQGAP2, fig.cap="Fig3E_MST_IQGAP2: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig3E_MST_IQGAP2.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig3E_MST_IQGAP2.csv"))
+```
+
+### Fig3E / MST / MYD88
+
+Source file: `Fig3E_MST_MYD88.csv`.
+
+```{r Fig3E-MST-MYD88, fig.cap="Fig3E_MST_MYD88: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig3E_MST_MYD88.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig3E_MST_MYD88.csv"))
+```
+

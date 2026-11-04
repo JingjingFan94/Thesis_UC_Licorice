@@ -1,0 +1,102 @@
+---
+title: "Figure 5 LA suppresses ferroptotic responses through the IQGAP2/MYD88-p65 axis."
+author: "Jingjing Fan"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: false
+---
+
+# Figure 5: data and code
+
+This document loads **all numeric source data supplied for this figure** and produces descriptive plotting previews. The CSV files are preserved exactly as provided. These graphics are **not a pixel-perfect reconstruction** of the manuscript PDF: layouts, statistical significance annotations, Western blots, microscopy images, schematics, and other image-based panels require separate source materials.
+
+**Statistical caution:** No between-group tests, multiplicity corrections, significance stars, binding-affinity fits, or other undocumented inferential procedures are invented here. The plots show observed values or descriptive mean ± SD/SEM as labelled.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = TRUE, message = FALSE,
+                       fig.width = 9, fig.height = 5.5, dpi = 150)
+source("../script/source_data_helpers.R", encoding = "UTF-8")
+```
+
+This figure has **7 CSV source-data files**. The original figure PDF is `Figure 5.pdf` when included in the full archive.
+
+## Panel B
+
+### Fig5B / Fth1
+
+Source file: `Fig5B_Fth1.csv`.
+
+```{r Fig5B-Fth1, fig.cap="Fig5B_Fth1: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig5B_Fth1.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig5B_Fth1.csv"))
+```
+
+### Fig5B / Ftl
+
+Source file: `Fig5B_Ftl.csv`.
+
+```{r Fig5B-Ftl, fig.cap="Fig5B_Ftl: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig5B_Ftl.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig5B_Ftl.csv"))
+```
+
+## Panel C
+
+### Fig5C / TEM
+
+Source file: `Fig5C_TEM.csv`.
+
+```{r Fig5C-TEM, fig.cap="Fig5C_TEM: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig5C_TEM.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig5C_TEM.csv"))
+```
+
+## Panel D
+
+### Fig5D / Fe2+
+
+Source file: `Fig5D_Fe2+.csv`.
+
+```{r Fig5D-Fe2plus, fig.cap="Fig5D_Fe2+: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig5D_Fe2+.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig5D_Fe2+.csv"))
+```
+
+### Fig5D / MDA
+
+Source file: `Fig5D_MDA.csv`.
+
+```{r Fig5D-MDA, fig.cap="Fig5D_MDA: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig5D_MDA.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig5D_MDA.csv"))
+```
+
+## Panel F
+
+### Fig5F / 4HNE
+
+Source file: `Fig5F_4HNE.csv`.
+
+```{r Fig5F-4HNE, fig.cap="Fig5F_4HNE: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig5F_4HNE.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig5F_4HNE.csv"))
+```
+
+### Fig5F / GPX4
+
+Source file: `Fig5F_GPX4.csv`.
+
+```{r Fig5F-GPX4, fig.cap="Fig5F_GPX4: descriptive plot from supplied source data"}
+data <- read_source_csv("Fig5F_GPX4.csv")
+knitr::kable(source_summary(data), caption = "Source CSV completeness check")
+print(plot_source_data(data, "Fig5F_GPX4.csv"))
+```
+
