@@ -1,0 +1,5 @@
+sink("sessionInfo.txt")
+cat("Repository: LicoisoflavoneA-colitis-figures\n")
+cat("Generated: ", format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z"), "\n\n", sep = "")
+print(sessionInfo())
+sink()
